@@ -1,13 +1,16 @@
-import Header from './components/Header';
+import Navbar from './components/Navbar';
 import ProfileCard from './components/ProfileCard';
 import PreviousWork from './components/PreviousWork';
+import About from './components/About';
 
 const App = () => {
+
     return (
-        <div className='h-screen w-screen'>
-            <Header/>
-            <ProfileCard/>
-            <PreviousWork/>
+        <div className='w-screen'>
+            <Navbar />
+            <ProfileCard />
+            <About />
+            <PreviousWork />
         </div>
     );
 };
