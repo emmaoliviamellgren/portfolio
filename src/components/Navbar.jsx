@@ -19,9 +19,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <a
-                            className={
-                                'transition ease-in-out duration-50 hover:opacity-80'
-                            }
+                            className='transition ease-in-out duration-50 hover:opacity-80'
                             href='#previous-work'>
                             Projects
                         </a>

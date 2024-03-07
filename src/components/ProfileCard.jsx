@@ -1,4 +1,4 @@
-import Emma from '../assets/Emma2024ver2small.jpg';
+import Emma from '../assets/Emma.jpg';
 
 const ProfileCard = () => {
     return (
@@ -7,7 +7,7 @@ const ProfileCard = () => {
             <div className='flex flex-col xl:flex-row justify-center items-center text-center mx-auto max-w-screen-xl px-6 py-12 mt-12 font-sans md:px-12 md:py-32 lg:px-24'>
                 <img
                     src={Emma}
-                    className='h-[300px] w-[310px] object-cover rounded-full'
+                    className='h-[300px] w-[310px] object-cover object-top rounded-full'
                     alt='Emma Mellgren'
                 />
                 <div className='pl-2 xl:pl-32'>
@@ -36,7 +36,7 @@ const ProfileCard = () => {
                         </a>
                         <a
                             className='border border-stone-500 transition ease-in-out duration-50 hover:opacity-80 rounded-md px-4 py-2'
-                            href='https://github.com/emmaoliviamellgren'>
+                            href='https://linkedin.com/in/emma-m-945954192'>
                             LinkedIn
                         </a>
                     </div>

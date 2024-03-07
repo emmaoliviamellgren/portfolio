@@ -14,7 +14,11 @@ export const useActiveOnScroll = (aboutRef, projectsRef) => {
                         `a[href="#${id}"]`
                     );
                     if (entry.isIntersecting) {
-                        navbarLink.style.color = '#000';
+                        if (id === 'about') {
+                            navbarLink.style.color = '#0ea5e9';
+                        } else if (id === 'previous-work') {
+                            navbarLink.style.color = '#ec4899';
+                        }
                     } else {
                         navbarLink.style.color = '#fff';
                     }
@@ -35,5 +39,4 @@ export const useActiveOnScroll = (aboutRef, projectsRef) => {
             observer.disconnect();
         };
     }, [aboutRef, projectsRef]);
-
 };
