@@ -44,14 +44,12 @@ const PreviousWork = () => {
                                 View on Github
                             </a>
                         </div>
-                        <div className='w-[48rem] max-w-none shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0'>
+                        <div className='w-[48rem] h-[440px] md:h-[540px] max-w-none shadow-xl ring-1 ring-gray-400/10 md:-ml-4 lg:-ml-0 overflow-hidden'>
                             <img
                                 id='E-Commerce'
                                 src={ECommerce}
                                 alt='E-Commerce'
-                                className='rounded-xl h-[540px] object-cover object-left-top'
-                                width={2432}
-                                height={1442}
+                                className='rounded-xl object-cover h-full w-full hover:object-center-bottom hover:w-max'
                                 onMouseEnter={(event) => {
                                     event.target.src = ECommerce2;
                                 }}
@@ -106,11 +104,11 @@ const PreviousWork = () => {
                                 </a>
                             </div>
                         </div>
-                        <div className='w-[48rem] max-w-none shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0'>
+                        <div className='w-[48rem] h-[440px] md:h-[540px] max-w-none shadow-xl ring-1 ring-gray-400/10 md:-ml-4 lg:-ml-0'>
                             <img
                                 src={WeatherApp}
                                 alt='Weather application'
-                                className='rounded-xl h-[540px] object-cover object-left-top'
+                                className='rounded-xl object-cover h-full w-full'
                                 width={2432}
                                 height={1442}
                                 onMouseEnter={(event) => {
@@ -157,11 +155,11 @@ const PreviousWork = () => {
                                 View in Figma
                             </a>
                         </div>
-                        <div className='w-[48rem] max-w-none shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0'>
+                        <div className='w-[48rem] h-[440px] md:h-[540px] max-w-none shadow-xl ring-1 ring-gray-400/10 md:-ml-4 lg:-ml-0'>
                             <img
                                 src={FigmaProject}
                                 alt='Food Delivery Service (Prototype)'
-                                className='rounded-xl h-[540px] object-cover object-left-top'
+                                className='rounded-xl object-cover h-full w-full'
                                 width={2432}
                                 height={1442}
                                 onMouseEnter={(event) => {
