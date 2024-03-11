@@ -1,11 +1,11 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useIntersectionObserver } from '@uidotdev/usehooks';
 
 /* Hook for displaying which section is active, and its corresponding link */
 
 export const useActiveOnScroll = (aboutRef, projectsRef) => {
-
     useEffect(() => {
+
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
@@ -14,18 +14,15 @@ export const useActiveOnScroll = (aboutRef, projectsRef) => {
                         `a[href="#${id}"]`
                     );
                     if (entry.isIntersecting) {
-                        if (id === 'about') {
-                            navbarLink.style.color = '#0ea5e9';
-                        } else if (id === 'previous-work') {
-                            navbarLink.style.color = '#ec4899';
-                        }
+                        navbarLink.style.color = '#0ea5e9';
                     } else {
                         navbarLink.style.color = '#fff';
                     }
                 });
             },
-            { threshold: 0.7 }
+            { threshold: 0.4 }
         );
+
 
         if (aboutRef && aboutRef.current) {
             observer.observe(aboutRef.current);

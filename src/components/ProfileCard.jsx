@@ -5,11 +5,12 @@ const ProfileCard = () => {
         <div className='flex flex-wrap w-screen'>
             {/* Heading */}
             <div className='flex flex-col xl:flex-row justify-center items-center text-center mx-auto max-w-screen-xl px-6 py-12 mt-12 font-sans md:px-12 md:py-32 lg:px-24'>
+                <div className='flex-none relative h-[300px] w-[300px] overflow-hidden rounded-[50%]'>
                 <img
                     src={Emma}
-                    className='h-[300px] w-[310px] object-cover object-top rounded-full'
+                    className='h-full w-full object-cover object-top'
                     alt='Emma Mellgren'
-                />
+                /></div>
                 <div className='pl-2 xl:pl-32'>
                     <h1 className='text-3xl my-12 xl:mt-0 leading-[3rem]'>
                         👋 Hi, I'm <span className='font-bold'>Emma</span> -
