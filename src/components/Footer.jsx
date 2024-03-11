@@ -2,7 +2,7 @@ import { IoIosMail, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io';
 
 const Footer = () => {
     return (
-        <footer className='h-24 w-[calc(100%-6rem)] lg:w-[calc(100%-24rem)] 2xl:w-[calc(100%-40rem)] max-w-7xl mx-auto backdrop-blur-sm bg-white/10 mb-12 rounded-xl shadow-xl shadow-indigo-500/15 ring-1 ring-gray-400/30 flex justify-center items-center'>
+        <footer className='h-24 w-[calc(100%-6rem)] lg:w-[calc(100%-24rem)] 2xl:w-[calc(100%-40rem)] max-w-7xl mx-auto backdrop-blur-sm bg-white/10 mb-12 rounded-xl shadow-xl shadow-indigo-500/15 ring-1 ring-gray-400/30 flex flex-col gap-3 justify-center items-center'>
             <ul className='text-white flex gap-8 text-3xl'>
                 <li>
                     <a href='mailto:mellgrenemma0@gmail.com'>
@@ -20,6 +20,9 @@ const Footer = () => {
                     </a>
                 </li>
             </ul>
+            <p className='text-sm text-slate-500'>
+                For my full CV, please check in my Linkedin.
+            </p>
         </footer>
     );
 };

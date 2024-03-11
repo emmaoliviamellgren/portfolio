@@ -1,5 +1,5 @@
-import Emma from '../assets/Emma.jpg';
-import { RiArrowDownSLine } from 'react-icons/ri';
+import Emma from '../../assets/Emma.jpg';
+import { LuCheckCircle2 } from 'react-icons/lu';
 
 const ProfileCard = () => {
     return (
@@ -49,17 +49,28 @@ const ProfileCard = () => {
 
             {/* Languages container */}
             <div className='mx-auto text-center flex flex-col'>
-                <div className='flex flex-col gap-4 justify-center items-center w-screen h-36 backdrop-blur-md bg-white/5 mt-12 px-20 lg:px-40'>
-                    <h2 className='text-xl md:text-2xl leading-10'>
-                        <span className='mr-3'>🚀</span> React | HTML, CSS, JS |
-                        Figma | MERN stack
-                    </h2>
-                    <div className='flex flex-row items-end gap-2'>
-                        <p className='text-sm md:text-base'>See more</p>
-                        <span>
-                            <RiArrowDownSLine className='animate-bounce w-4 h-4' />
-                        </span>
-                    </div>
+                <div className='flex flex-col gap-4 lg:gap-12 justify-center items-center w-screen h-fit backdrop-blur-md bg-white/5 mt-12 px-6 lg:px-40 py-6 lg:py-20'>
+                    <p className='text-xs sm:text-sm lg:text-lg'>
+                        Some technologies I've been working with recently:
+                    </p>
+                    <ul className='flex flex-row gap-4 md:text-2xl leading-10'>
+                        <li className='flex items-center gap-2'>
+                            <LuCheckCircle2 className='text-sky-500' /> React
+                        </li>
+                        <li className='flex items-center gap-2'>
+                            <LuCheckCircle2 className='text-sky-500' /> Figma
+                        </li>
+                        <li className='flex items-center gap-2'>
+                            <LuCheckCircle2 className='text-sky-500' /> Node.js
+                        </li>
+                        <li className='flex items-center gap-2'>
+                            <LuCheckCircle2 className='text-sky-500' />{' '}
+                            JavaScript <span className='text-sm'>(ES6+)</span>
+                        </li>
+                        <li className='flex items-center gap-2'>
+                            <LuCheckCircle2 className='text-sky-500' /> MongoDB
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>

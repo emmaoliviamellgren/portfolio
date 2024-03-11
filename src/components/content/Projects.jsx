@@ -2,20 +2,20 @@ import { useRef } from 'react';
 import { useActiveOnScroll } from '../../hooks/useActiveOnScroll';
 
 // Img
-import FigmaProject from '../assets/FigmaProject-1.png';
-import FigmaProject2 from '../assets/FigmaProject-2.png';
-import WeatherApp from '../assets/WeatherApp-1.png';
-import WeatherApp2 from '../assets/WeatherApp-2.png';
-import ECommerce from '../assets/E-Commerce-1.png';
-import ECommerce2 from '../assets/E-Commerce-2.png';
+import FigmaProject from '../../assets/FigmaProject-1.png';
+import FigmaProject2 from '../../assets/FigmaProject-2.png';
+import WeatherApp from '../../assets/WeatherApp-1.png';
+import WeatherApp2 from '../../assets/WeatherApp-2.png';
+import ECommerce from '../../assets/E-Commerce-1.png';
+import ECommerce2 from '../../assets/E-Commerce-2.png';
 
-const PreviousWork = () => {
+const Projects = () => {
     const projectsRef = useRef(null);
     useActiveOnScroll(null, projectsRef);
 
     return (
         <section
-            id='previous-work'
+            id='projects'
             ref={projectsRef}>
             <div className='overflow-hidden py-24 lg:py-24'>
                 <div className='mx-auto max-w-7xl px-6 lg:px-8'>
@@ -178,7 +178,7 @@ const PreviousWork = () => {
                                     Highlighted projects
                                 </h2>
                                 <div className='relative z-10 mt-2 bg-slate-800 bg-opacity-80 py-2 px-2 w-fit md:bg-transparent md:py-0 md:px-0'>
-                                    <p className='sm:block text-sm font-semibold leading-7 text-sky-500 align-super'>
+                                    <p className='sm:block text-sm font-semibold leading-7 text-sky-500 align-super lg:mb-2'>
                                         (PROTOTYPE)
                                     </p>
                                     <p className='text-3xl font-bold tracking-tight sm:text-4xl'>
@@ -246,4 +246,4 @@ const PreviousWork = () => {
     );
 };
 
-export default PreviousWork;
+export default Projects;
