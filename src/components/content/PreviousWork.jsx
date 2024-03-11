@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { useActiveOnScroll } from '../hooks/useActiveOnScroll';
+import { useActiveOnScroll } from '../../hooks/useActiveOnScroll';
 
 // Img
 import FigmaProject from '../assets/FigmaProject-1.png';
@@ -17,7 +17,7 @@ const PreviousWork = () => {
         <section
             id='previous-work'
             ref={projectsRef}>
-            <div className='overflow-hidden py-16 lg:py-24'>
+            <div className='overflow-hidden py-24 lg:py-24'>
                 <div className='mx-auto max-w-7xl px-6 lg:px-8'>
                     <div className='mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2'>
                         <div className='lg:pr-8 lg:pt-4'>
@@ -55,6 +55,11 @@ const PreviousWork = () => {
                                     checkout process. By creating an account,
                                     users can see their order history of
                                     previously "purchased" items.
+                                </p>
+                                <p className='font-semibold mt-4'>
+                                    <span className='mr-2'>🖥</span>
+                                    Currently working on a full stack version of
+                                    this app!
                                 </p>
                             </div>
                             <a
@@ -177,11 +182,9 @@ const PreviousWork = () => {
                                         (PROTOTYPE)
                                     </p>
                                     <p className='text-3xl font-bold tracking-tight sm:text-4xl'>
-                                    Food Delivery Service
-                                    
-                                </p>
+                                        Food Delivery Service
+                                    </p>
                                 </div>
-                                
 
                                 {/* Small screens block element */}
                                 <div className='-z-1 opacity-50 block md:hidden absolute -mt-[10rem] sm:-mt-36 right-[1rem] sm:right-6 w-[19rem] sm:w-[24rem] aspect-video h-auto max-h-60 rounded-xl shadow-xl ring-1 ring-gray-400/10 overflow-hidden'>

@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import { useActiveOnScroll } from '../hooks/useActiveOnScroll';
+import { useActiveOnScroll } from '../../hooks/useActiveOnScroll';
 
 const About = () => {
     const aboutRef = useRef(null);
@@ -25,7 +25,7 @@ const About = () => {
                                     developer @{' '}
                                     <a
                                         href='https://kyh.se/'
-                                        className='underline underline-offset-4 decoration-2 hover:opacity-80 decoration-pink-500 transition-all ease-in-out duration-50 hover:decoration-[#313638]'>
+                                        className='font-semibold'>
                                         KYH
                                     </a>
                                     . I'm passionate about learning all things

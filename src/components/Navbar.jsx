@@ -1,4 +1,3 @@
-import { useActiveOnScroll } from '../hooks/useActiveOnScroll';
 import { useCollapseOnScroll } from '../hooks/useCollapseOnScroll';
 
 const Navbar = () => {

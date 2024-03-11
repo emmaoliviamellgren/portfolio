@@ -15,8 +15,9 @@ const ProfileCard = () => {
                 </div>
                 <div className='pl-2 xl:pl-32'>
                     <h1 className='text-3xl my-12 xl:mt-0 leading-[3rem]'>
-                        👋 Hi, I'm <span className='font-bold'>Emma</span> -
-                        front end developer in the making!
+                        <span className='mr-3'>👋</span> Hi, I'm{' '}
+                        <span className='font-bold'>Emma</span> - front end
+                        developer in the making!
                     </h1>
                     {/* Subheading */}
                     <p className='gap-6 text-xl leading-[2.2rem]'>
@@ -50,7 +51,8 @@ const ProfileCard = () => {
             <div className='mx-auto text-center flex flex-col'>
                 <div className='flex flex-col gap-4 justify-center items-center w-screen h-36 backdrop-blur-md bg-white/5 mt-12 px-20 lg:px-40'>
                     <h2 className='text-xl md:text-2xl leading-10'>
-                        🚀 React | HTML, CSS, JS | Figma | MERN stack
+                        <span className='mr-3'>🚀</span> React | HTML, CSS, JS |
+                        Figma | MERN stack
                     </h2>
                     <div className='flex flex-row items-end gap-2'>
                         <p className='text-sm md:text-base'>See more</p>
