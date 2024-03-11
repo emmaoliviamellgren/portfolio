@@ -60,7 +60,6 @@ const PreviousWork = () => {
                                 }}
                             />
                         </div>
-                    
                     </div>
                 </div>
             </div>
@@ -147,8 +146,8 @@ const PreviousWork = () => {
                                     intuitive interface, users can explore a
                                     variety of soups, access information about
                                     allergens and ingredients, as well as
-                                    experience seamless transactions from
-                                    selection to checkout.
+                                    intuitively navigate from selection to
+                                    checkout.
                                 </p>
                             </div>
                             <a
