@@ -2,7 +2,12 @@ import { useRef } from 'react';
 import { useActiveOnScroll } from '../hooks/useActiveOnScroll';
 
 // Img
-import FigmaProject from '../assets/Figma Project.png';
+import FigmaProject from '../assets/FigmaProject-1.png';
+import FigmaProject2 from '../assets/FigmaProject-2.png';
+import WeatherApp from '../assets/WeatherApp-1.png';
+import WeatherApp2 from '../assets/WeatherApp-2.png';
+import ECommerce from '../assets/E-Commerce-1.png';
+import ECommerce2 from '../assets/E-Commerce-2.png';
 
 const PreviousWork = () => {
     const projectsRef = useRef(null);
@@ -34,18 +39,28 @@ const PreviousWork = () => {
                                 </p>
                             </div>
                             <a
-                            className='border border-stone-500 transition ease-in-out duration-50 hover:opacity-80 rounded-md px-4 py-2'
-                            href='https://github.com/emmaoliviamellgren'>
-                            View on Github
-                        </a>
+                                className='border border-stone-500 transition ease-in-out duration-50 hover:opacity-80 rounded-md px-4 py-2'
+                                href='https://github.com/emmaoliviamellgren'>
+                                View on Github
+                            </a>
                         </div>
-                        <img
-                            src='https://tailwindui.com/img/component-images/dark-project-app-screenshot.png'
-                            alt='E-commerce template'
-                            className='w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0 hover:grayscale'
-                            width={2432}
-                            height={1442}
-                        />
+                        <div className='w-[48rem] max-w-none shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0'>
+                            <img
+                                id='E-Commerce'
+                                src={ECommerce}
+                                alt='E-Commerce'
+                                className='rounded-xl h-[540px] object-cover object-left-top'
+                                width={2432}
+                                height={1442}
+                                onMouseEnter={(event) => {
+                                    event.target.src = ECommerce2;
+                                }}
+                                onMouseLeave={(event) => {
+                                    event.target.src = ECommerce;
+                                }}
+                            />
+                        </div>
+                    
                     </div>
                 </div>
             </div>
@@ -64,24 +79,49 @@ const PreviousWork = () => {
                                     I created a simple and user-friendly weather
                                     web application that provides real-time
                                     weather information for any location around
-                                    the world. Users can easily check the
+                                    the world, using{' '}
+                                    <a
+                                        href='https://www.weatherapi.com'
+                                        className='font-semibold'>
+                                        WeatherAPI
+                                    </a>{' '}
+                                    for weather forecast and data. In the
+                                    application, users can easily check the
                                     current weather conditions, temperature,
                                     humidity and wind speed.
                                 </p>
+                                <p className='block font-semibold mt-2'>
+                                    Deployed with Netlify.
+                                </p>
                             </div>
-                            <a
-                            className='border border-stone-500 transition ease-in-out duration-50 hover:opacity-80 rounded-md px-4 py-2'
-                            href='https://github.com/emmaoliviamellgren'>
-                            View on Github
-                        </a>
+                            <div className='flex flex-col gap-4 w-fit'>
+                                <a
+                                    className='border border-stone-500 transition ease-in-out duration-50 hover:opacity-80 rounded-md px-4 py-2'
+                                    href='https://github.com/emmaoliviamellgren'>
+                                    View on Github
+                                </a>
+                                <a
+                                    className='border border-stone-500 transition ease-in-out duration-50 hover:opacity-80 rounded-md px-4 py-2'
+                                    href='https://weather-of-the-day-project.netlify.app'>
+                                    View in browser
+                                </a>
+                            </div>
                         </div>
-                        <img
-                            src='https://tailwindui.com/img/component-images/dark-project-app-screenshot.png'
-                            alt='Weather application'
-                            className='w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0 hover:grayscale'
-                            width={2432}
-                            height={1442}
-                        />
+                        <div className='w-[48rem] max-w-none shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0'>
+                            <img
+                                src={WeatherApp}
+                                alt='Weather application'
+                                className='rounded-xl h-[540px] object-cover object-left-top'
+                                width={2432}
+                                height={1442}
+                                onMouseEnter={(event) => {
+                                    event.target.src = WeatherApp2;
+                                }}
+                                onMouseLeave={(event) => {
+                                    event.target.src = WeatherApp;
+                                }}
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -100,27 +140,39 @@ const PreviousWork = () => {
                                     </span>
                                 </p>
                                 <p className='mt-6 text-base leading-8'>
-                                    I created a simple and user-friendly weather
-                                    web application that provides real-time
-                                    weather information for any location around
-                                    the world. Users can easily check the
-                                    current weather conditions, temperature,
-                                    humidity and wind speed.
+                                    As a school project in our UX-design course,
+                                    I prototyped a Soup Delivery service that
+                                    offers a user-friendly experience when
+                                    ordering your favorite comfort food. With an
+                                    intuitive interface, users can explore a
+                                    variety of soups, access information about
+                                    allergens and ingredients, as well as
+                                    experience seamless transactions from
+                                    selection to checkout.
                                 </p>
                             </div>
                             <a
-                            className='border border-stone-500 transition ease-in-out duration-50 hover:opacity-80 rounded-md px-4 py-2'
-                            href='https://github.com/emmaoliviamellgren'>
-                            View on Github
-                        </a>
+                                className='border border-stone-500 transition ease-in-out duration-50 hover:opacity-80 rounded-md px-4 py-2'
+                                href='https://www.figma.com/file/m3UG4v4RsBQYl6ut31HrIe/Soup-y-Needs?type=design&node-id=0%3A1&mode=design&t=4tXyp1TWCz06uZdN-1 
+                                '>
+                                View in Figma
+                            </a>
                         </div>
-                        <img
-                            src={FigmaProject}
-                            alt='Food Delivery Service (Prototype)'
-                            className='w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0 hover:grayscale'
-                            width={2432}
-                            height={1442}
-                        />
+                        <div className='w-[48rem] max-w-none shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0'>
+                            <img
+                                src={FigmaProject}
+                                alt='Food Delivery Service (Prototype)'
+                                className='rounded-xl h-[540px] object-cover object-left-top'
+                                width={2432}
+                                height={1442}
+                                onMouseEnter={(event) => {
+                                    event.target.src = FigmaProject2;
+                                }}
+                                onMouseLeave={(event) => {
+                                    event.target.src = FigmaProject;
+                                }}
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
