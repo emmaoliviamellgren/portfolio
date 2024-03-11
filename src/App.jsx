@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 const App = () => {
 
     return (
-        <div className='w-screen select-none'>
+        <div className='w-screen'>
             <Navbar />
             <ProfileCard />
             <About />

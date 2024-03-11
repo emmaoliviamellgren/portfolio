@@ -17,18 +17,37 @@ const PreviousWork = () => {
         <section
             id='previous-work'
             ref={projectsRef}>
-            <div className='overflow-hidden py-12 lg:py-24'>
+            <div className='overflow-hidden py-16 lg:py-24'>
                 <div className='mx-auto max-w-7xl px-6 lg:px-8'>
                     <div className='mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2'>
                         <div className='lg:pr-8 lg:pt-4'>
                             <div className='lg:max-w-lg mb-6'>
-                                <h2 className='text-base font-semibold leading-7 text-sky-500'>
+                                <h2
+                                    className='relative z-10 text-base font-semibold leading-7 text-sky-500 bg-slate-800 py-0.5 px-2 w-fit bg-opacity-80
+                                md:bg-transparent md:py-0 md:px-0'>
                                     Highlighted projects
                                 </h2>
-                                <p className='mt-2 text-3xl font-bold tracking-tight sm:text-4xl'>
+                                <p className='relative z-10 mt-2 text-3xl font-bold tracking-tight sm:text-4xl bg-slate-800 bg-opacity-80  py-2 px-2 w-fit md:bg-transparent md:py-0 md:px-0'>
                                     E-commerce
                                 </p>
-                                <p className='mt-6 text-base leading-8'>
+
+                                {/* Small screens block element */}
+                                <div className='-z-1 opacity-50 block md:hidden absolute -mt-36 right-6 w-[24rem] aspect-video h-auto max-h-60 rounded-xl shadow-xl ring-1 ring-gray-400/10 overflow-hidden'>
+                                    <img
+                                        src={ECommerce}
+                                        alt='E-Commerce'
+                                        className='rounded-xl h-full w-full object-cover'
+                                        onMouseEnter={(event) => {
+                                            event.target.src = ECommerce2;
+                                        }}
+                                        onMouseLeave={(event) => {
+                                            event.target.src = ECommerce;
+                                        }}
+                                    />
+                                </div>
+                                {/* Element ends */}
+
+                                <p className='w-fit relative z-10 mt-6 text-base leading-8'>
                                     As part of a school assignment, I created an
                                     e-commerce template application built with
                                     React. Users can browse through items, add
@@ -44,9 +63,10 @@ const PreviousWork = () => {
                                 View on Github
                             </a>
                         </div>
-                        <div className='w-[48rem] h-[440px] md:h-[540px] max-w-none shadow-xl ring-1 ring-gray-400/10 md:-ml-4 lg:-ml-0 overflow-hidden'>
+
+                        {/* Mid+ screens block element */}
+                        <div className='hidden md:block w-[48rem] h-[440px] md:h-[540px] max-w-none shadow-xl ring-1 ring-gray-400/10 md:-ml-4 lg:-ml-0 overflow-hidden'>
                             <img
-                                id='E-Commerce'
                                 src={ECommerce}
                                 alt='E-Commerce'
                                 className='rounded-xl object-cover h-full w-full hover:object-center-bottom hover:w-max'
@@ -58,6 +78,7 @@ const PreviousWork = () => {
                                 }}
                             />
                         </div>
+                        {/* Element ends */}
                     </div>
                 </div>
             </div>
@@ -66,13 +87,31 @@ const PreviousWork = () => {
                     <div className='mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2'>
                         <div className='lg:pr-8 lg:pt-4'>
                             <div className='lg:max-w-lg mb-6'>
-                                <h2 className='text-base font-semibold leading-7 text-sky-500'>
+                                <h2
+                                    className='relative z-10 text-base font-semibold leading-7 text-sky-500 bg-slate-800 py-0.5 px-2 w-fit bg-opacity-80
+                                md:bg-transparent md:py-0 md:px-0'>
                                     Highlighted projects
                                 </h2>
-                                <p className='mt-2 text-3xl font-bold tracking-tight sm:text-4xl'>
+                                <p className='relative z-10 mt-2 text-3xl font-bold tracking-tight sm:text-4xl bg-slate-800 bg-opacity-80  py-2 px-2 w-fit md:bg-transparent md:py-0 md:px-0'>
                                     Weather application
                                 </p>
-                                <p className='mt-6 text-base leading-8'>
+                                {/* Small screens block element */}
+                                <div className='-z-1 opacity-50 block md:hidden absolute -mt-36 right-6 w-[24rem] aspect-video h-auto max-h-60 rounded-xl shadow-xl ring-1 ring-gray-400/10 overflow-hidden'>
+                                    <img
+                                        src={WeatherApp}
+                                        alt='Weather Application'
+                                        className='rounded-xl h-full w-full object-cover'
+                                        onMouseEnter={(event) => {
+                                            event.target.src = WeatherApp2;
+                                        }}
+                                        onMouseLeave={(event) => {
+                                            event.target.src = WeatherApp;
+                                        }}
+                                    />
+                                </div>
+                                {/* Element ends */}
+
+                                <p className='w-fit relative z-10 mt-6 text-base leading-8'>
                                     I created a simple and user-friendly weather
                                     web application that provides real-time
                                     weather information for any location around
@@ -104,13 +143,13 @@ const PreviousWork = () => {
                                 </a>
                             </div>
                         </div>
-                        <div className='w-[48rem] h-[440px] md:h-[540px] max-w-none shadow-xl ring-1 ring-gray-400/10 md:-ml-4 lg:-ml-0'>
+
+                        {/* Mid+ screens block element */}
+                        <div className='hidden md:block w-[48rem] h-[440px] md:h-[540px] max-w-none shadow-xl ring-1 ring-gray-400/10 md:-ml-4 lg:-ml-0'>
                             <img
                                 src={WeatherApp}
                                 alt='Weather application'
                                 className='rounded-xl object-cover h-full w-full'
-                                width={2432}
-                                height={1442}
                                 onMouseEnter={(event) => {
                                     event.target.src = WeatherApp2;
                                 }}
@@ -119,6 +158,7 @@ const PreviousWork = () => {
                                 }}
                             />
                         </div>
+                        {/* Element ends */}
                     </div>
                 </div>
             </div>
@@ -127,16 +167,35 @@ const PreviousWork = () => {
                     <div className='mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2'>
                         <div className='lg:pr-8 lg:pt-4'>
                             <div className='lg:max-w-lg mb-6'>
-                                <h2 className='text-base font-semibold leading-7 text-sky-500'>
+                                <h2
+                                    className='relative z-10 text-base font-semibold leading-7 text-sky-500 bg-slate-800 py-0.5 px-2 w-fit bg-opacity-80
+                                md:bg-transparent md:py-0 md:px-0'>
                                     Highlighted projects
                                 </h2>
-                                <p className='mt-2 text-3xl font-bold tracking-tight sm:text-4xl'>
+                                <p className='relative z-10 mt-2 text-3xl font-bold tracking-tight sm:text-4xl bg-slate-800 bg-opacity-80 py-2 px-2 w-fit md:bg-transparent md:py-0 md:px-0'>
                                     Food Delivery Service
-                                    <span className='pl-3 text-sm font-semibold leading-7 text-sky-500 align-super'>
+                                    <span className='sm:block pl-2 text-sm font-semibold leading-7 text-sky-500 align-super'>
                                         (PROTOTYPE)
                                     </span>
                                 </p>
-                                <p className='mt-6 text-base leading-8'>
+
+                                {/* Small screens block element */}
+                                <div className='-z-1 opacity-50 block md:hidden absolute -mt-36 right-6 w-[24rem] aspect-video h-auto max-h-60 rounded-xl shadow-xl ring-1 ring-gray-400/10 overflow-hidden'>
+                                    <img
+                                        src={FigmaProject}
+                                        alt='Food Delivery Service (Prototype)'
+                                        className='rounded-xl h-full w-full object-cover'
+                                        onMouseEnter={(event) => {
+                                            event.target.src = FigmaProject2;
+                                        }}
+                                        onMouseLeave={(event) => {
+                                            event.target.src = FigmaProject;
+                                        }}
+                                    />
+                                </div>
+                                {/* Element ends */}
+
+                                <p className='w-fit relative z-10 mt-6 text-base leading-8'>
                                     As a school project in our UX-design course,
                                     I prototyped a Soup Delivery service that
                                     offers a user-friendly experience when
@@ -155,7 +214,9 @@ const PreviousWork = () => {
                                 View in Figma
                             </a>
                         </div>
-                        <div className='w-[48rem] h-[440px] md:h-[540px] max-w-none shadow-xl ring-1 ring-gray-400/10 md:-ml-4 lg:-ml-0'>
+
+                        {/* Mid+ screens block element */}
+                        <div className='hidden md:block w-[48rem] h-[440px] md:h-[540px] max-w-none shadow-xl ring-1 ring-gray-400/10 md:-ml-4 lg:-ml-0'>
                             <img
                                 src={FigmaProject}
                                 alt='Food Delivery Service (Prototype)'
@@ -170,6 +231,7 @@ const PreviousWork = () => {
                                 }}
                             />
                         </div>
+                        {/* Element ends */}
                     </div>
                 </div>
             </div>
