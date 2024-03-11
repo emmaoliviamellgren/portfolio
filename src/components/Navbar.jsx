@@ -25,13 +25,6 @@ const Navbar = () => {
                         Projects
                     </a>
                 </li>
-                <li>
-                    <a
-                        className={`transition ease-in-out duration-50 hover:opacity-80`}
-                        href='#contact'>
-                        Get in touch
-                    </a>
-                </li>
             </ul>
         </nav>
     );

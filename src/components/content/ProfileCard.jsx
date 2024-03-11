@@ -1,5 +1,6 @@
 import Emma from '../../assets/Emma.jpg';
 import { LuCheckCircle2 } from 'react-icons/lu';
+import { IoIosMail, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io';
 
 const ProfileCard = () => {
     return (
@@ -32,16 +33,30 @@ const ProfileCard = () => {
                         . I'm eager to learn and grow in tech!
                     </p>
                     {/* Links */}
-                    <div className='mt-12 flex justify-center gap-4'>
+                    <div className='mt-12 flex justify-center gap-2'>
                         <a
-                            className='border border-stone-500 transition ease-in-out duration-50 hover:opacity-80 rounded-md px-4 py-2'
+                            className='border border-stone-500 transition ease-in-out duration-50 hover:opacity-80 rounded-md px-4 py-2 flex items-center gap-1.5'
                             href='https://github.com/emmaoliviamellgren'>
-                            GitHub
+                            <span>
+                                <IoLogoGithub />
+                            </span>{' '}
+                            <p>GitHub</p>
                         </a>
                         <a
-                            className='border border-stone-500 transition ease-in-out duration-50 hover:opacity-80 rounded-md px-4 py-2'
+                            className='border border-stone-500 transition ease-in-out duration-50 hover:opacity-80 rounded-md px-4 py-2 flex items-center gap-1.5'
                             href='https://linkedin.com/in/emma-m-945954192'>
-                            LinkedIn
+                            <span>
+                                <IoLogoLinkedin />
+                            </span>{' '}
+                            <p>LinkedIn</p>
+                        </a>
+                        <a
+                            className='border border-stone-500 transition ease-in-out duration-50 hover:opacity-80 rounded-md px-4 py-2 flex items-center gap-1.5'
+                            href='mailto:mellgrenemma0@gmail.com'>
+                            <span>
+                                <IoIosMail />
+                            </span>{' '}
+                            <p>Email</p>
                         </a>
                     </div>
                 </div>
@@ -49,11 +64,11 @@ const ProfileCard = () => {
 
             {/* Languages container */}
             <div className='mx-auto text-center flex flex-col'>
-                <div className='flex flex-col gap-4 lg:gap-12 justify-center items-center w-screen h-fit backdrop-blur-md bg-white/5 mt-12 px-6 lg:px-40 py-6 lg:py-20'>
+                <div className='flex flex-col gap-8 lg:gap-12 justify-center items-center w-screen h-fit backdrop-blur-md bg-white/5 mt-12 px-6 lg:px-40 py-6 lg:py-20'>
                     <p className='text-xs sm:text-sm lg:text-lg'>
                         Some technologies I've been working with recently:
                     </p>
-                    <ul className='flex flex-row gap-4 md:text-2xl leading-10'>
+                    <ul className='flex flex-row justify-center flex-wrap md:flex-nowrap gap-4 md:text-2xl leading-3'>
                         <li className='flex items-center gap-2'>
                             <LuCheckCircle2 className='text-sky-500' /> React
                         </li>
@@ -65,7 +80,8 @@ const ProfileCard = () => {
                         </li>
                         <li className='flex items-center gap-2'>
                             <LuCheckCircle2 className='text-sky-500' />{' '}
-                            JavaScript <span className='text-sm'>(ES6+)</span>
+                            JavaScript{' '}
+                            <span className='text-xs sm:text-sm'>(ES6+)</span>
                         </li>
                         <li className='flex items-center gap-2'>
                             <LuCheckCircle2 className='text-sky-500' /> MongoDB

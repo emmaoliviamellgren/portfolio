@@ -20,7 +20,7 @@ const Footer = () => {
                     </a>
                 </li>
             </ul>
-            <p className='text-sm text-slate-500'>
+            <p className='text-xs sm:text-sm text-slate-500'>
                 For my full CV, please check in my Linkedin.
             </p>
         </footer>
