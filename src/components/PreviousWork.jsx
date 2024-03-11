@@ -32,7 +32,7 @@ const PreviousWork = () => {
                                 </p>
 
                                 {/* Small screens block element */}
-                                <div className='-z-1 opacity-50 block md:hidden absolute -mt-36 right-6 w-[24rem] aspect-video h-auto max-h-60 rounded-xl shadow-xl ring-1 ring-gray-400/10 overflow-hidden'>
+                                <div className='-z-1 opacity-50 block md:hidden absolute -mt-[10rem] sm:-mt-36 right-[1rem] sm:right-6 w-[19rem] sm:w-[24rem] aspect-video h-auto max-h-60 rounded-xl shadow-xl ring-1 ring-gray-400/10 overflow-hidden'>
                                     <img
                                         src={ECommerce}
                                         alt='E-Commerce'
@@ -96,7 +96,7 @@ const PreviousWork = () => {
                                     Weather application
                                 </p>
                                 {/* Small screens block element */}
-                                <div className='-z-1 opacity-50 block md:hidden absolute -mt-36 right-6 w-[24rem] aspect-video h-auto max-h-60 rounded-xl shadow-xl ring-1 ring-gray-400/10 overflow-hidden'>
+                                <div className='-z-1 opacity-50 block md:hidden absolute -mt-[10rem] sm:-mt-36 right-[1rem] sm:right-6 w-[19rem] sm:w-[24rem] aspect-video h-auto max-h-60 rounded-xl shadow-xl ring-1 ring-gray-400/10 overflow-hidden'>
                                     <img
                                         src={WeatherApp}
                                         alt='Weather Application'
@@ -172,15 +172,19 @@ const PreviousWork = () => {
                                 md:bg-transparent md:py-0 md:px-0'>
                                     Highlighted projects
                                 </h2>
-                                <p className='relative z-10 mt-2 text-3xl font-bold tracking-tight sm:text-4xl bg-slate-800 bg-opacity-80 py-2 px-2 w-fit md:bg-transparent md:py-0 md:px-0'>
-                                    Food Delivery Service
-                                    <span className='sm:block pl-2 text-sm font-semibold leading-7 text-sky-500 align-super'>
+                                <div className='relative z-10 mt-2 bg-slate-800 bg-opacity-80 py-2 px-2 w-fit md:bg-transparent md:py-0 md:px-0'>
+                                    <p className='sm:block text-sm font-semibold leading-7 text-sky-500 align-super'>
                                         (PROTOTYPE)
-                                    </span>
+                                    </p>
+                                    <p className='text-3xl font-bold tracking-tight sm:text-4xl'>
+                                    Food Delivery Service
+                                    
                                 </p>
+                                </div>
+                                
 
                                 {/* Small screens block element */}
-                                <div className='-z-1 opacity-50 block md:hidden absolute -mt-36 right-6 w-[24rem] aspect-video h-auto max-h-60 rounded-xl shadow-xl ring-1 ring-gray-400/10 overflow-hidden'>
+                                <div className='-z-1 opacity-50 block md:hidden absolute -mt-[10rem] sm:-mt-36 right-[1rem] sm:right-6 w-[19rem] sm:w-[24rem] aspect-video h-auto max-h-60 rounded-xl shadow-xl ring-1 ring-gray-400/10 overflow-hidden'>
                                     <img
                                         src={FigmaProject}
                                         alt='Food Delivery Service (Prototype)'

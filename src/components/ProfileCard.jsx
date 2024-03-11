@@ -49,11 +49,11 @@ const ProfileCard = () => {
             {/* Languages container */}
             <div className='mx-auto text-center flex flex-col'>
                 <div className='flex flex-col gap-4 justify-center items-center w-screen h-36 backdrop-blur-md bg-white/5 mt-12 px-20 lg:px-40'>
-                    <h2 className='text-2xl leading-10'>
+                    <h2 className='text-xl md:text-2xl leading-10'>
                         🚀 React | HTML, CSS, JS | Figma | MERN stack
                     </h2>
                     <div className='flex flex-row items-end gap-2'>
-                        <p className='text-base'>See more</p>
+                        <p className='text-sm md:text-base'>See more</p>
                         <span>
                             <RiArrowDownSLine className='animate-bounce w-4 h-4' />
                         </span>
