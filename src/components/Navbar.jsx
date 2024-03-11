@@ -9,7 +9,7 @@ const Navbar = () => {
     return (
         <nav
             className={`z-10 flex fixed transition-all duration-400 h-16 ease-in-out overflow-hidden w-screen justify-center items-center text-white backdrop-blur-md bg-white/10 ${
-                collapseOnScroll && 'h-8 backdrop-blur-xl'
+                collapseOnScroll && 'h-8 backdrop-blur-xl bg-black/10'
             }`}>
             <ul className='flex gap-6 text-base items-center tracking-tight'>
                 <li>

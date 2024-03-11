@@ -1,28 +1,30 @@
 import { useEffect, useState } from 'react';
 import { useIntersectionObserver } from '@uidotdev/usehooks';
+import { useCollapseOnScroll } from './useCollapseOnScroll';
 
 /* Hook for displaying which section is active, and its corresponding link */
 
 export const useActiveOnScroll = (aboutRef, projectsRef) => {
-    useEffect(() => {
+    const scrolled = useCollapseOnScroll();
 
+    useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
                     const id = entry.target.getAttribute('id');
-                    const navbarLink = document.querySelector(
+                    const activeLink = document.querySelector(
                         `a[href="#${id}"]`
                     );
-                    if (entry.isIntersecting) {
-                        navbarLink.style.color = '#0ea5e9';
+
+                    if (entry.isIntersecting || !scrolled) {
+                        activeLink.style.opacity = '100%';
                     } else {
-                        navbarLink.style.color = '#fff';
+                        activeLink.style.opacity = '30%';
                     }
                 });
             },
             { threshold: 0.2 }
         );
-
 
         if (aboutRef && aboutRef.current) {
             observer.observe(aboutRef.current);
@@ -35,5 +37,5 @@ export const useActiveOnScroll = (aboutRef, projectsRef) => {
         return () => {
             observer.disconnect();
         };
-    }, [aboutRef, projectsRef]);
+    }, [aboutRef, projectsRef, scrolled]);
 };
