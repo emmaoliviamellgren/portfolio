@@ -64,7 +64,7 @@ const Projects = () => {
                             </div>
                             <a
                                 className='border border-stone-500 transition ease-in-out duration-50 hover:opacity-80 rounded-md px-4 py-2'
-                                href='https://github.com/emmaoliviamellgren'>
+                                href='https://github.com/emmaoliviamellgren/e-commerce'>
                                 View on Github
                             </a>
                         </div>
@@ -138,7 +138,7 @@ const Projects = () => {
                             <div className='flex flex-col gap-4 w-fit'>
                                 <a
                                     className='border border-stone-500 transition ease-in-out duration-50 hover:opacity-80 rounded-md px-4 py-2'
-                                    href='https://github.com/emmaoliviamellgren'>
+                                    href='https://github.com/emmaoliviamellgren/weather-app'>
                                     View on Github
                                 </a>
                                 <a
