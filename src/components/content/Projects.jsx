@@ -4,10 +4,11 @@ import { useActiveOnScroll } from '../../hooks/useActiveOnScroll';
 // Img
 import FigmaProject from '../../assets/FigmaProject-1.png';
 import FigmaProject2 from '../../assets/FigmaProject-2.png';
-import WeatherApp from '../../assets/WeatherApp-1.png';
-import WeatherApp2 from '../../assets/WeatherApp-2.png';
+import v1WeatherApp from '../../assets/WeatherApp-1.png';
+import v1WeatherApp2 from '../../assets/WeatherApp-2.png';
 import ECommerce from '../../assets/E-Commerce-1.png';
 import ECommerce2 from '../../assets/E-Commerce-2.png';
+import WeatherApp from '../../assets/WeatherApp.png'
 
 const Projects = () => {
     const projectsRef = useRef(null);
@@ -17,6 +18,84 @@ const Projects = () => {
         <section
             id='projects'
             ref={projectsRef}>
+            <div className='overflow-hidden py-24 sm:py-32'>
+                <div className='mx-auto max-w-7xl px-6 lg:px-8'>
+                    <div className='mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2'>
+                        <div className='lg:pr-8 lg:pt-4'>
+                            <div className='lg:max-w-lg mb-6'>
+                                <h2
+                                    className='relative z-10 text-base font-semibold leading-7 text-sky-500 bg-slate-800 py-0.5 px-2 w-fit bg-opacity-80
+                                md:bg-transparent md:py-0 md:px-0'>
+                                    Highlighted projects
+                                </h2>
+                                <p className='relative z-10 mt-2 text-3xl font-bold tracking-tight sm:text-4xl bg-slate-800 bg-opacity-80  py-2 px-2 w-fit md:bg-transparent md:py-0 md:px-0'>
+                                    Weather application
+                                </p>
+                                {/* Small screens block element */}
+                                <div className='-z-1 opacity-50 block md:hidden absolute -mt-[10rem] sm:-mt-36 right-[1rem] sm:right-6 w-[19rem] sm:w-[24rem] aspect-video h-auto max-h-60 rounded-xl shadow-xl ring-1 ring-gray-400/10 overflow-hidden'>
+                                    <img
+                                        src={WeatherApp}
+                                        alt='Weather Application'
+                                        className='rounded-xl h-full w-full object-cover'
+                                        onMouseEnter={(event) => {
+                                            event.target.src = WeatherApp;
+                                        }}
+                                        onMouseLeave={(event) => {
+                                            event.target.src = WeatherApp;
+                                        }}
+                                    />
+                                </div>
+                                {/* Element ends */}
+
+                                <p className='w-fit relative z-10 mt-6 text-base leading-8'>
+                                        I wanted to recreate my weather application that was built with vanilla JavaScript. I was interested in learning Vue, so I thought it would be fun to rebuild it with Vue and learn the language in the process.
+                                        This web applications offers an intuitive and user-friendly experience, with geolocation API and a multi-day forecast.
+                                </p>
+                                <p className='block font-semibold mt-2'>
+                                        Weather data provided by <a
+                                        href='https://www.weatherapi.com'
+                                        className='font-semibold'>
+                                        WeatherAPI
+                                    </a>.
+                                    Deployed with <a
+                                        href='https://www.netlify.com'
+                                        className='font-semibold'>
+                                        Netlify
+                                    </a>.
+                                </p>
+                            </div>
+                            <div className='flex flex-col gap-4 w-fit'>
+                                <a
+                                    className='border border-stone-500 transition ease-in-out duration-50 hover:opacity-80 rounded-md px-4 py-2'
+                                    href='https://github.com/emmaoliviamellgren/weather-vue'>
+                                    View on Github
+                                </a>
+                                <a
+                                    className='border border-stone-500 transition ease-in-out duration-50 hover:opacity-80 rounded-md px-4 py-2'
+                                    href='https://weatheroftoday.netlify.app'>
+                                    View in browser
+                                </a>
+                            </div>
+                        </div>
+
+                        {/* Mid+ screens block element */}
+                        <div className='hidden md:block w-[48rem] h-[440px] md:h-[540px] max-w-none shadow-xl ring-1 ring-gray-400/10 md:-ml-4 lg:-ml-0'>
+                            <img
+                                src={WeatherApp}
+                                alt='Weather application'
+                                className='rounded-xl object-cover h-full w-full'
+                                onMouseEnter={(event) => {
+                                    event.target.src = WeatherApp;
+                                }}
+                                onMouseLeave={(event) => {
+                                    event.target.src = WeatherApp;
+                                }}
+                            />
+                        </div>
+                        {/* Element ends */}
+                    </div>
+                </div>
+            </div>
             <div className='overflow-hidden py-24 lg:py-24'>
                 <div className='mx-auto max-w-7xl px-6 lg:px-8'>
                     <div className='mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2'>
@@ -48,18 +127,13 @@ const Projects = () => {
                                 {/* Element ends */}
 
                                 <p className='w-fit relative z-10 mt-6 text-base leading-8'>
-                                    As part of a school assignment, I created an
+                                    As part of a school assignment, I created a full stack
                                     e-commerce template application built with
-                                    React. Users can browse through items, add
+                                    React and Node.js. Users can browse through items, add
                                     them to their shopping cart and proceed to
                                     checkout process. By creating an account,
                                     users can see their order history of
-                                    previously "purchased" items.
-                                </p>
-                                <p className='font-semibold mt-4'>
-                                    <span className='mr-2'>🖥</span>
-                                    Currently working on a full stack version of
-                                    this app!
+                                    previously &quot;purchased&quot; items.
                                 </p>
                             </div>
                             <a
@@ -98,19 +172,19 @@ const Projects = () => {
                                     Highlighted projects
                                 </h2>
                                 <p className='relative z-10 mt-2 text-3xl font-bold tracking-tight sm:text-4xl bg-slate-800 bg-opacity-80  py-2 px-2 w-fit md:bg-transparent md:py-0 md:px-0'>
-                                    Weather application
+                                    Weather application <span className='text-sky-500 opacity-45'>v1</span>
                                 </p>
                                 {/* Small screens block element */}
                                 <div className='-z-1 opacity-50 block md:hidden absolute -mt-[10rem] sm:-mt-36 right-[1rem] sm:right-6 w-[19rem] sm:w-[24rem] aspect-video h-auto max-h-60 rounded-xl shadow-xl ring-1 ring-gray-400/10 overflow-hidden'>
                                     <img
-                                        src={WeatherApp}
+                                        src={v1WeatherApp}
                                         alt='Weather Application'
                                         className='rounded-xl h-full w-full object-cover'
                                         onMouseEnter={(event) => {
-                                            event.target.src = WeatherApp2;
+                                            event.target.src = v1WeatherApp2;
                                         }}
                                         onMouseLeave={(event) => {
-                                            event.target.src = WeatherApp;
+                                            event.target.src = v1WeatherApp;
                                         }}
                                     />
                                 </div>
@@ -131,9 +205,6 @@ const Projects = () => {
                                     current weather conditions, temperature,
                                     humidity and wind speed.
                                 </p>
-                                <p className='block font-semibold mt-2'>
-                                    Deployed with Netlify.
-                                </p>
                             </div>
                             <div className='flex flex-col gap-4 w-fit'>
                                 <a
@@ -141,25 +212,20 @@ const Projects = () => {
                                     href='https://github.com/emmaoliviamellgren/weather-app'>
                                     View on Github
                                 </a>
-                                <a
-                                    className='border border-stone-500 transition ease-in-out duration-50 hover:opacity-80 rounded-md px-4 py-2'
-                                    href='https://weather-of-the-day-project.netlify.app'>
-                                    View in browser
-                                </a>
                             </div>
                         </div>
 
                         {/* Mid+ screens block element */}
                         <div className='hidden md:block w-[48rem] h-[440px] md:h-[540px] max-w-none shadow-xl ring-1 ring-gray-400/10 md:-ml-4 lg:-ml-0'>
                             <img
-                                src={WeatherApp}
+                                src={v1WeatherApp}
                                 alt='Weather application'
                                 className='rounded-xl object-cover h-full w-full'
                                 onMouseEnter={(event) => {
-                                    event.target.src = WeatherApp2;
+                                    event.target.src = v1WeatherApp2;
                                 }}
                                 onMouseLeave={(event) => {
-                                    event.target.src = WeatherApp;
+                                    event.target.src = v1WeatherApp;
                                 }}
                             />
                         </div>

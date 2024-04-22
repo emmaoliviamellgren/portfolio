@@ -3,6 +3,7 @@ import { LuCheckCircle2 } from 'react-icons/lu';
 import { IoIosMail, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io';
 
 const ProfileCard = () => {
+
     return (
         <div className='flex flex-wrap w-screen'>
             {/* Heading */}
@@ -15,13 +16,13 @@ const ProfileCard = () => {
                     />
                 </div>
                 <div className='pl-2 xl:pl-32'>
-                    <h1 className='text-3xl my-12 xl:mt-0 leading-[3rem]'>
-                        <span className='mr-3'>👋</span> Hi, I'm{' '}
+                    <h1 className='headline text-3xl my-12 xl:mt-0 leading-[3rem]'>
+                        <span className='mr-3'>👋</span> Hi, I&apos;m{' '}
                         <span className='font-bold'>Emma</span> - front end
                         developer in the making!
                     </h1>
                     {/* Subheading */}
-                    <p className='gap-6 text-lg md:text-xl leading-[2.2rem]'>
+                    <p className='tagline gap-6 text-lg md:text-xl leading-[2.2rem]'>
                         Currently studying{' '}
                         <span className='underline underline-offset-4 decoration-2 decoration-sky-500 transition-all ease-in-out duration-50 hover:decoration-[#313638]'>
                             frontend development
@@ -30,7 +31,7 @@ const ProfileCard = () => {
                         <span className='underline underline-offset-4 decoration-2 decoration-pink-500 transition-all ease-in-out duration-50 hover:decoration-[#313638]'>
                             engaging user interfaces
                         </span>
-                        . I'm eager to learn and grow in tech!
+                        . I&apos;m eager to learn and grow in tech!
                     </p>
                     {/* Links */}
                     <div className='mt-12 flex justify-center gap-2'>
@@ -66,9 +67,12 @@ const ProfileCard = () => {
             <div className='mx-auto text-center flex flex-col'>
                 <div className='flex flex-col gap-8 lg:gap-12 justify-center items-center w-screen h-fit backdrop-blur-md bg-white/5 mt-12 px-6 lg:px-40 py-8 lg:py-20'>
                     <p className='text-sm md:text-base lg:text-lg'>
-                        Some technologies I've been working with recently:
+                        Some technologies I&apos;ve been working with recently:
                     </p>
                     <ul className='flex flex-row justify-center flex-wrap md:flex-nowrap gap-4 text-lg md:text-2xl leading-6'>
+                        <li className='flex items-center gap-2'>
+                            <LuCheckCircle2 className='text-sky-500' /> Vue
+                        </li>
                         <li className='flex items-center gap-2'>
                             <LuCheckCircle2 className='text-sky-500' /> React
                         </li>
