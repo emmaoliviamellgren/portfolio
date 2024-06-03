@@ -8,7 +8,7 @@ import v1WeatherApp from '../../assets/WeatherApp-1.png';
 import v1WeatherApp2 from '../../assets/WeatherApp-2.png';
 import ECommerce from '../../assets/E-Commerce-1.png';
 import ECommerce2 from '../../assets/E-Commerce-2.png';
-import WeatherApp from '../../assets/WeatherApp.png'
+import WeatherApp from '../../assets/WeatherApp.png';
 
 const Projects = () => {
     const projectsRef = useRef(null);
@@ -48,20 +48,29 @@ const Projects = () => {
                                 {/* Element ends */}
 
                                 <p className='w-fit relative z-10 mt-6 text-base leading-8'>
-                                        I wanted to recreate my weather application that was built with vanilla JavaScript. I was interested in learning Vue, so I thought it would be fun to rebuild it with Vue and learn the language in the process.
-                                        This web applications offers an intuitive and user-friendly experience, with geolocation API and a multi-day forecast.
+                                    I wanted to recreate my weather application
+                                    that was built with vanilla JavaScript. I
+                                    was interested in learning Vue, so I thought
+                                    it would be fun to rebuild it with Vue and
+                                    learn the language in the process. This web
+                                    applications offers an intuitive and
+                                    user-friendly experience, with geolocation
+                                    API and a multi-day forecast.
                                 </p>
                                 <p className='block font-semibold mt-2'>
-                                        Weather data provided by <a
+                                    Weather data provided by{' '}
+                                    <a
                                         href='https://www.weatherapi.com'
                                         className='font-semibold'>
                                         WeatherAPI
-                                    </a>.
-                                    Deployed with <a
+                                    </a>
+                                    . Deployed with{' '}
+                                    <a
                                         href='https://www.netlify.com'
                                         className='font-semibold'>
                                         Netlify
-                                    </a>.
+                                    </a>
+                                    .
                                 </p>
                             </div>
                             <div className='flex flex-col gap-4 w-fit'>
@@ -127,19 +136,25 @@ const Projects = () => {
                                 {/* Element ends */}
 
                                 <p className='w-fit relative z-10 mt-6 text-base leading-8'>
-                                    As part of a school assignment, I created a full stack
-                                    e-commerce template application built with
-                                    React and Node.js. Users can browse through items, add
-                                    them to their shopping cart and proceed to
-                                    checkout process. By creating an account,
-                                    users can see their order history of
-                                    previously &quot;purchased&quot; items.
+                                    As part of a school assignment, I created a
+                                    full stack e-commerce template application
+                                    built with React and Node.js. Users can
+                                    browse through items, add them to their
+                                    shopping cart and proceed to checkout
+                                    process. By creating an account, users can
+                                    see their order history of previously
+                                    &quot;purchased&quot; items.
                                 </p>
                             </div>
                             <a
                                 className='border border-stone-500 transition ease-in-out duration-50 hover:opacity-80 rounded-md px-4 py-2'
                                 href='https://github.com/emmaoliviamellgren/e-commerce'>
                                 View on Github
+                            </a>
+                            <a
+                                className='border border-stone-500 transition ease-in-out duration-50 hover:opacity-80 rounded-md px-4 py-2'
+                                href='https://e-commerce-client-5p7v.onrender.com/'>
+                                View in browser
                             </a>
                         </div>
 
@@ -172,7 +187,10 @@ const Projects = () => {
                                     Highlighted projects
                                 </h2>
                                 <p className='relative z-10 mt-2 text-3xl font-bold tracking-tight sm:text-4xl bg-slate-800 bg-opacity-80  py-2 px-2 w-fit md:bg-transparent md:py-0 md:px-0'>
-                                    Weather application <span className='text-sky-500 opacity-45'>v1</span>
+                                    Weather application{' '}
+                                    <span className='text-sky-500 opacity-45'>
+                                        v1
+                                    </span>
                                 </p>
                                 {/* Small screens block element */}
                                 <div className='-z-1 opacity-50 block md:hidden absolute -mt-[10rem] sm:-mt-36 right-[1rem] sm:right-6 w-[19rem] sm:w-[24rem] aspect-video h-auto max-h-60 rounded-xl shadow-xl ring-1 ring-gray-400/10 overflow-hidden'>
