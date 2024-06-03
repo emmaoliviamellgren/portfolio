@@ -3,7 +3,6 @@ import { LuCheckCircle2 } from 'react-icons/lu';
 import { IoIosMail, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io';
 
 const ProfileCard = () => {
-
     return (
         <div className='flex flex-wrap w-screen'>
             {/* Heading */}
@@ -71,21 +70,19 @@ const ProfileCard = () => {
                     </p>
                     <ul className='flex flex-row justify-center flex-wrap md:flex-nowrap gap-4 text-lg md:text-2xl leading-6'>
                         <li className='flex items-center gap-2'>
+                            <LuCheckCircle2 className='text-sky-500' /> Next.js
+                        </li>
+                        <li className='flex items-center gap-2'>
                             <LuCheckCircle2 className='text-sky-500' /> Vue
                         </li>
                         <li className='flex items-center gap-2'>
                             <LuCheckCircle2 className='text-sky-500' /> React
                         </li>
                         <li className='flex items-center gap-2'>
-                            <LuCheckCircle2 className='text-sky-500' /> Figma
+                            <LuCheckCircle2 className='text-sky-500' /> Firebase
                         </li>
                         <li className='flex items-center gap-2'>
                             <LuCheckCircle2 className='text-sky-500' /> Node.js
-                        </li>
-                        <li className='flex items-center gap-2'>
-                            <LuCheckCircle2 className='text-sky-500' />{' '}
-                            JavaScript{' '}
-                            <span className='text-xs sm:text-sm'>(ES6+)</span>
                         </li>
                         <li className='flex items-center gap-2'>
                             <LuCheckCircle2 className='text-sky-500' /> MongoDB
